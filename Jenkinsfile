@@ -8,7 +8,7 @@ pipeline {
         // }
         stage("Print File"){
             steps {
-                sh 'echo pwd'
+                sh pwd
                 sh 'cat EKS.md'
             }
         }
