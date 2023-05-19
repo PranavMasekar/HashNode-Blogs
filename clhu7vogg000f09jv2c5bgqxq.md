@@ -2,7 +2,7 @@
 title: "Unlocking the Secrets of Clean Architecture: Building Scalable Flutter Apps : Part-1"
 datePublished: Fri May 19 2023 07:06:06 GMT+0000 (Coordinated Universal Time)
 cuid: clhu7vogg000f09jv2c5bgqxq
-slug: unlocking-the-secrets-of-clean-architecture-building-scalable-flutter-apps-part-1
+slug: flutter-clean-architecture-part-1
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1684479545888/cd511b3c-6f34-46dc-90b6-5fda1edda42f.png
 tags: dart, flutter, dependency-injection, clean-architecture, flutter-bloc
 
