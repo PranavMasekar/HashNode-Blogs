@@ -2,7 +2,7 @@
 title: "Sail through Kubernetes Deployments with Helm Charts"
 datePublished: Sun Jun 04 2023 03:30:39 GMT+0000 (Coordinated Universal Time)
 cuid: cligv88i705r8amnv2e460zyq
-slug: sail-through-kubernetes-deployments-with-helm-charts
+slug: helm-charts
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685686366852/07e125e7-6d9b-4299-9601-d97bed169856.png
 tags: deployment, kubernetes, devops, helm, wemakedevs
 
