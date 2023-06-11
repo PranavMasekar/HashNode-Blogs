@@ -4,6 +4,7 @@ datePublished: Sun Jun 11 2023 03:30:42 GMT+0000 (Coordinated Universal Time)
 cuid: cliqvb9p103azemnv96xd25dx
 slug: flutter-hive
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1686370704644/72247fc9-e195-47f1-a93a-280ec53934b7.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1686456209618/0a436edd-3197-4feb-b78b-82e24105953f.png
 tags: app-development, flutter, caching, hive, wemakedevs
 
 ---
