@@ -1,5 +1,5 @@
 ---
-title: "Supercharge Your Flutter App with Hive: Next-Level Caching for Lightning-Fast Performance"
+title: "Supercharge Your Flutter App with Hive"
 datePublished: Sun Jun 11 2023 03:30:42 GMT+0000 (Coordinated Universal Time)
 cuid: cliqvb9p103azemnv96xd25dx
 slug: flutter-hive
