@@ -3,6 +3,7 @@ title: "Kubernetes Architecture"
 datePublished: Sun Jun 25 2023 15:13:23 GMT+0000 (Coordinated Universal Time)
 cuid: cljbkkuue002409i898dt5rdn
 slug: kubernetes-architecture
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1687706239617/2ad323ca-724f-47d3-bc84-de0e896dd6ec.png
 tags: kubernetes, architecture, devops, wemakedevs
 
 ---
