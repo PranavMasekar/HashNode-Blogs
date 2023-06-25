@@ -18,7 +18,7 @@ Welcome to our tech blog, where we delve into the fascinating world of Flutter a
 
 By including the flutter\_riverpod package we get a lot of widget types and providers.
 
-* **Ref**:- In Riverpod, the ref object is a crucial component that allows you to interact with providers and perform various operations within the provider system. The best analogy for a ref is context, as context is used to interact with widgets ref is used to interact with providers. 
+* **Ref**:- In Riverpod, the ref object is a crucial component that allows you to interact with providers and perform various operations within the provider system. The best analogy for a ref is context, as context is used to interact with widgets ref is used to interact with providers.
     
 * **ProviderScope**:-  In Riverpod, provider scope refers to the visibility and accessibility of a provider within the widget tree. We used this function above runApp() method to access our providers from anywhere.
     
@@ -27,7 +27,7 @@ By including the flutter\_riverpod package we get a lot of widget types and prov
 * **ConsumerStatefulWidget**:- ConsumerStatefulWidget is an alternative to Statfulwidget of Flutter. As in StatefulWidget, we have access to Buildcontext anywhere inside the class. The same ConsumerStatefulWidget gives access to ref in the entire class.
     
 
-### **Types of Providers -** 
+### **Types of Providers -**
 
 1. **Provider**:- Provider is great for accessing dependencies that don't change, such as the repositories in our app. Where we can use this to access our repository instance from anywhere in the application.
     
@@ -42,13 +42,13 @@ Class UserRepository {
 }
 ```
 
-We can access this instance using the - 
+We can access this instance using the -
 
 ```dart
 final userRepository = ref.watch(userRepositoryProvider);
 ```
 
-This can be used as dependency management of the application where we can use one instance repeatedly. 
+This can be used as dependency management of the application where we can use one instance repeatedly.
 
 1. **StateProvider**:- StateProvider is great for storing simple state objects that can change, such as a boolean value for loading.
     
@@ -59,7 +59,7 @@ final isLoadingProvider = StateProvider<bool>((ref) {
 });
 ```
 
-We can update the value of StateProvider using ref.read() - 
+We can update the value of StateProvider using ref.read() -
 
 ```dart
 class UserRepository {
@@ -71,7 +71,7 @@ Future<void> getData()async {
 }
 ```
 
-And we can read the value using the - 
+And we can read the value using the -
 
 ```dart
 final isLoading = ref.watch(isLoadingProvider);
@@ -100,7 +100,7 @@ Widget build(BuildContext context, WidgetRef ref) {
 }
 ```
 
-1. **StreamProvider**:- We use StreamProvider to watch a Stream of results from a real-time API and reactively rebuild the UI. Here is the classic example of a Firebase login check - 
+1. **StreamProvider**:- We use StreamProvider to watch a Stream of results from a real-time API and reactively rebuild the UI. Here is the classic example of a Firebase login check -
     
 
 ```dart
@@ -121,7 +121,7 @@ Widget build(BuildContext context, WidgetRef ref) {
 }
 ```
 
-1. StateNotifierProvider:- We use StateNotifierProvider when we want to use a NotifierClass with Riverpod. Suppose we have - 
+1. **StateNotifierProvider**:- We use StateNotifierProvider when we want to use a NotifierClass with Riverpod. Suppose we have -
     
 
 ```dart
@@ -143,7 +143,7 @@ We read this provider by -
 final counter = ref.watch(counterProvider);
 ```
 
-And update this provider - 
+And update this provider -
 
 ```dart
 ref.read(counterProvider.notifier).increment();
@@ -151,7 +151,7 @@ ref.read(counterProvider.notifier).increment();
 
 > Remember this is just an example. StateNotifier can be used to handle very complex objects and classes.
 
-1. **ChangeNotifierProvider**:- We use ChangeNotifierProvider when we are using old provider classes which extend ChangeNotifier. 
+1. **ChangeNotifierProvider**:- We use ChangeNotifierProvider when we are using old provider classes which extend ChangeNotifier.
     
 
 ```dart
@@ -171,7 +171,7 @@ final counterProvider = ChangeNotifierProvider<Counter>((ref) {
 We can read the provider as the same -
 
 ```dart
-final counter = ref.watch(counterProvider); 
+final counter = ref.watch(counterProvider);
 ```
 
 And call any function inside the provider using the -
@@ -180,6 +180,6 @@ And call any function inside the provider using the -
  ref.read(counterProvider).increment();
 ```
 
-**Congratulations** on reaching the end of this blog! You've now gained a solid understanding of Flutter Riverpod for state management. We covered the fundamental concepts of Riverpod, including providers, state management, and the role of the ref object. We explored all the different types of providers in Riverpod. In the next part, we are going to build the entire application using Riverpod, Until then 
+**Congratulations** on reaching the end of this blog! You've now gained a solid understanding of Flutter Riverpod for state management. We covered the fundamental concepts of Riverpod, including providers, state management, and the role of the ref object. We explored all the different types of providers in Riverpod. In the next part, we are going to build the entire application using Riverpod, Until then
 
 Keep Fluttering 💙💙💙
