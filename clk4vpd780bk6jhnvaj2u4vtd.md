@@ -33,7 +33,7 @@ String capitalizeFirstLetter() {
 This String extension capitalizes the first character of a String and returns it. This is very useful in showing usernames and other useful text in the application. If you can look at the code you can access the string in the function using this keyword. So basically this keyword gives you access to the String which you want to capitalize. You can use this extension in the code as follows -
 
 ```dart
-Text('pranav masekar').capitalizeFirstLetter(); // "Pranav masekar"
+Text('pranav masekar'.capitalizeFirstLetter()); // "Pranav masekar"
 ```
 
 ### Integer Extensions
@@ -91,7 +91,7 @@ extension ContextExtensions on BuildContext {
 }
 ```
 
-This context extension provides an easier way to access the current screen size like height and width. This is extremely helpful because we don't need to write the entire MediaQuer.of(context) to get the screen size. We can use this extension as this - 
+This context extension provides an easier way to access the current screen size like height and width. This is extremely helpful because we don't need to write the entire MediaQuer.of(context) to get the screen size. We can use this extension as this -
 
 ```dart
 Size screenSize = context.getScreenSize();
@@ -126,6 +126,6 @@ DateTime date = DateTime.now();
 String formattedDate = date.toDateWithSlashes(); // 15/07/2023
 ```
 
-**Congratulations** on finishing this blog on Flutter extensions! You have covered a lot of ground in this blog post. I encourage you to continue exploring Flutter extensions and to share your findings with the Flutter community. 
+**Congratulations** on finishing this blog on Flutter extensions! You have covered a lot of ground in this blog post. I encourage you to continue exploring Flutter extensions and to share your findings with the Flutter community.
 
 Keep Fluttering 💙💙💙
