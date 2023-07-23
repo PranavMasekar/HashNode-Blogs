@@ -14,9 +14,9 @@ As our Flutter applications grow in complexity, it becomes tedious to manually d
 
 In this blog, we'll see how Freezed can save us from writing repetitive code for immutable models. We'll look at how to define abstract classes and have concrete implementations generated for us. Freezed provides a clean syntax for declaring data classes without hand-writing tons of boilerplate. Let's see how Freezed can help us write less code while making our Flutter apps more robust!
 
-# **Installing Packages :** 
+# **Installing Packages :**
 
-To get started with freezed we need to install the following packages - 
+To get started with freezed we need to install the following packages -
 
 ```bash
 flutter pub add freezed_annotation
@@ -28,7 +28,7 @@ flutter pub add --dev json_serializable
 
 We need freezed\_annotation and json\_annotation to mark our model classes so that build\_runner can create those for us automatically. Json\_serializable is used to generate toJson() and fromJson() methods.
 
-# **Getting Started with Freezed Code Generation :** 
+# **Getting Started with Freezed Code Generation :**
 
 Now let’s create our first data class with the help of freezed package. So create a file named address.dart and add this code  -
 
@@ -36,24 +36,24 @@ Now let’s create our first data class with the help of freezed package. So cre
 
 Initially, your editor will be showing a lot of errors but don’t worry we will generate all those files shortly before that let's understand the code.
 
-* First, we annotate our class with @freezed so that our class can be generated automatically. 
+* First, we annotate our class with `@freezed` so that our class can be generated automatically.
     
 * The `With` keyword defines the Address class and says it will be implemented in the generated \_$Address class.
     
 * Then we define our variables inside the factory constructor.
     
-* The fromJson factory constructor is used to generate toJson and fromJson methods for the data class. 
+* The fromJson factory constructor is used to generate toJson and fromJson methods for the data class.
     
 
-Now go to the terminal in the root directory of the project and run this - 
+Now go to the terminal in the root directory of the project and run this -
 
 ```bash
 dart run build_runner build
 ```
 
-With that, all the required files will be generated automatically. 
+With that, all the required files will be generated automatically.
 
-# **Json Annotations and Default Values :** 
+# **Json Annotations and Default Values :**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690014999240/0e4621ae-4797-4f6e-bc98-0c63d17de3cc.png align="center")
 
@@ -68,9 +68,9 @@ So in summary:
 
 @JsonKey - Customizes JSON key naming for the property
 
-# **Leveraging Freezed Copy Logic in Nested Classes :** 
+# **Leveraging Freezed Copy Logic in Nested Classes :**
 
-As of now, we have created a simple modal class that just stores the address but in real work scenarios, this address class will be a part of the user class. So let’s create a user class that contains the instance of the Address class. 
+As of now, we have created a simple modal class that just stores the address but in real work scenarios, this address class will be a part of the user class. So let’s create a user class that contains the instance of the Address class.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690015050899/aa09f191-b104-4283-8bb0-5dcd2aee4466.png align="center")
 
@@ -82,16 +82,16 @@ Most of us may have used a vs code extension i.e. dart data class generator. Thi
 
 Here are some differences where Freezed shines than an extension -
 
-* ### Nested copyWith methods - 
+* ### Nested copyWith methods -
     
-    In the previous example where we created a User class that has an instance of the Address class. Suppose we want to change the zip code of the address then if the classes are generated with a data class generator extension we have to do something like this -  
+    In the previous example where we created a User class that has an instance of the Address class. Suppose we want to change the zip code of the address then if the classes are generated with a data class generator extension we have to do something like this -
     
 
 ```dart
 user = user.copyWith(address: user.address.copyWith(zipCode: 411045));
 ```
 
-But with the help of freezed it can be done like this - 
+But with the help of freezed it can be done like this -
 
 ```dart
 user = user.copyWith.address(zipCode: 411045);
