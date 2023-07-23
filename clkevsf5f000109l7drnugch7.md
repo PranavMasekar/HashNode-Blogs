@@ -64,9 +64,9 @@ With that, all the required files will be generated automatically.
 
 So in summary:
 
-@Default - Provides default value if the property is missing from JSON
+`@Default` - Provides default value if the property is missing from JSON
 
-@JsonKey - Customizes JSON key naming for the property
+@`JsonKey` - Customizes JSON key naming for the property
 
 # **Leveraging Freezed Copy Logic in Nested Classes :**
 
