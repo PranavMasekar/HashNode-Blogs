@@ -2,7 +2,7 @@
 title: "A Beginner's Guide to Basic Animation in Flutter"
 datePublished: Sun Sep 24 2023 03:30:12 GMT+0000 (Coordinated Universal Time)
 cuid: clmwwj2j4000309ib42cl73xr
-slug: a-beginners-guide-to-basic-animation-in-flutter
+slug: basic-animation-in-flutter
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1695487926561/44ca87b0-5044-43c2-a19b-a1cbaa7c448d.png
 tags: dart, flutter, animation, wemakedevs
 
