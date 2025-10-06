@@ -41,17 +41,26 @@ This guide documents the consistent style, structure, and tone used across the F
 
 ### Headings and Formatting
 
-- Use `#` for the main title in the body only if needed; otherwise start with `###` section headers.
+- Use `##` for section titles in the body. Keep titles short and scannable.
 - Prefer short, scannable headers: “Introduction”, “Prerequisites”, “Implementation”, “Domain Layer”, “Data Layer”, “Presentation Layer”, etc.
 - Use bold for emphasis and mini-subheads inline: `**What is BLoC?**`, `**GetSongsUseCase**`.
 - Use ordered or unordered lists for sequences, options, and prerequisites.
 
 ### Code Snippets
 
-- Always add language fences (```dart, ```yaml, ```bash, ```json) for syntax highlighting.
-- Make snippets self-contained when possible (imports or enough context to compile/run).
+- Prefer file-referenced code blocks to cite existing repo code using this exact format:
+
+  ```startLine:endLine:filepath
+  // code content here
+  ```
+
+  - Always include start line, end line, and absolute file path within the repo.
+  - Do not add language tags to file-referenced blocks.
+  - Keep referenced ranges tight and focused.
+
+- When showing commands or ad-hoc examples not in the repo, use plain fenced blocks (no language tag).
 - Keep lines under ~100–110 chars; split long expressions across lines for clarity.
-- After a snippet, explain the key lines in bullet points or a tight paragraph. Avoid restating obvious syntax.
+- After a snippet, add 2–5 bullets or a short paragraph explaining key lines or decisions.
 - Prefer multiple smaller snippets per section to illustrate progression.
 
 ### Content Patterns to Reuse
