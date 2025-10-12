@@ -1,7 +1,5 @@
 ---
 title: "Add AirPlay to Flutter in 5 Minutes"
-seoTitle: "Quick AirPlay Setup for Flutter Apps"
-seoDescription: "Add AirPlay to your Flutter app in 5 minutes. Implement seamless streaming with Pigeon and native Swift code for a beautiful audio player"
 datePublished: Sun Oct 12 2025 04:30:52 GMT+0000 (Coordinated Universal Time)
 cuid: cmgn7i4oe000602la8sex75oc
 slug: airplay
