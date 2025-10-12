@@ -6,6 +6,7 @@ datePublished: Sun Oct 12 2025 04:30:52 GMT+0000 (Coordinated Universal Time)
 cuid: cmgn7i4oe000602la8sex75oc
 slug: airplay
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1760004134853/20e45e76-d97c-4144-b86b-cabb42f43702.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1760244430542/31a17573-c9e9-4cca-bdbd-6e57771b618b.png
 tags: dart, swift, flutter, swiftui
 
 ---
